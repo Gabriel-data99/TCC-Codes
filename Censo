@@ -1,0 +1,1458 @@
+SELECT
+
+ dados.ano as ano,
+
+ dados.trimestre as trimestre,
+
+ dados.id_uf AS id_uf,
+
+ diretorio_id_uf.sigla AS id_uf_sigla,
+
+ diretorio_id_uf.nome AS id_uf_nome,
+
+ dados.sigla_uf AS sigla_uf,
+
+ diretorio_sigla_uf.nome AS sigla_uf_nome,
+
+ descricao_capital AS capital,
+
+ descricao_rm_ride AS rm_ride,
+
+ dados.id_upa as id_upa,
+
+ dados.id_estrato as id_estrato,
+
+ dados.id_domicilio as id_domicilio,
+
+ dados.id_pessoa as id_pessoa,
+
+ dados.V1008 as V1008,
+
+ dados.V1014 as V1014,
+
+ dados.V1016 as V1016,
+
+ descricao_V1022 AS V1022,
+
+ descricao_V1023 AS V1023,
+
+ dados.V1027 as V1027,
+
+ dados.V1028 as V1028,
+
+ dados.V1029 as V1029,
+
+ dados.V1033 as V1033,
+
+ dados.posest as posest,
+
+ dados.posest_sxi as posest_sxi,
+
+ dados.V2001 as V2001,
+
+ dados.V2003 as V2003,
+
+ descricao_V2005 AS V2005,
+
+ descricao_V2007 AS V2007,
+
+ dados.V2008 as V2008,
+
+ dados.V20081 as V20081,
+
+ dados.V20082 as V20082,
+
+ dados.V2009 as V2009,
+
+ descricao_V2010 AS V2010,
+
+ descricao_V3001 AS V3001,
+
+ descricao_V3002 AS V3002,
+
+ descricao_V3002A AS V3002A,
+
+ descricao_V3003 AS V3003,
+
+ descricao_V3003A AS V3003A,
+
+ descricao_V3004 AS V3004,
+
+ descricao_V3005 AS V3005,
+
+ descricao_V3005A AS V3005A,
+
+ descricao_V3006 AS V3006,
+
+ descricao_V3006A AS V3006A,
+
+ descricao_V3007 AS V3007,
+
+ descricao_V3008 AS V3008,
+
+ descricao_V3009 AS V3009,
+
+ descricao_V3009A AS V3009A,
+
+ descricao_V3010 AS V3010,
+
+ descricao_V3011 AS V3011,
+
+ descricao_V3011A AS V3011A,
+
+ descricao_V3012 AS V3012,
+
+ descricao_V3013 AS V3013,
+
+ descricao_V3013A AS V3013A,
+
+ descricao_V3013B AS V3013B,
+
+ descricao_V3014 AS V3014,
+
+ descricao_V4001 AS V4001,
+
+ descricao_V4002 AS V4002,
+
+ descricao_V4003 AS V4003,
+
+ descricao_V4004 AS V4004,
+
+ descricao_V4005 AS V4005,
+
+ descricao_V4006 AS V4006,
+
+ descricao_V4006A AS V4006A,
+
+ descricao_V4007 AS V4007,
+
+ descricao_V4008 AS V4008,
+
+ dados.V40081 as V40081,
+
+ dados.V40082 as V40082,
+
+ dados.V40083 as V40083,
+
+ descricao_V4009 AS V4009,
+
+ descricao_V4010 AS V4010,
+
+ descricao_V4012 AS V4012,
+
+ descricao_V40121 AS V40121,
+
+ dados.V4013 as V4013,
+
+ descricao_V40132 AS V40132,
+
+ descricao_V40132A AS V40132A,
+
+ descricao_V4014 AS V4014,
+
+ descricao_V4015 AS V4015,
+
+ descricao_V40151 AS V40151,
+
+ dados.V401511 as V401511,
+
+ dados.V401512 as V401512,
+
+ descricao_V4016 AS V4016,
+
+ dados.V40161 as V40161,
+
+ dados.V40162 as V40162,
+
+ dados.V40163 as V40163,
+
+ descricao_V4017 AS V4017,
+
+ descricao_V40171 AS V40171,
+
+ dados.V401711 as V401711,
+
+ descricao_V4018 AS V4018,
+
+ dados.V40181 as V40181,
+
+ dados.V40182 as V40182,
+
+ dados.V40183 as V40183,
+
+ descricao_V4019 AS V4019,
+
+ descricao_V4020 AS V4020,
+
+ descricao_V4021 AS V4021,
+
+ descricao_V4022 AS V4022,
+
+ descricao_V4024 AS V4024,
+
+ descricao_V4025 AS V4025,
+
+ descricao_V4026 AS V4026,
+
+ descricao_V4027 AS V4027,
+
+ descricao_V4028 AS V4028,
+
+ descricao_V4029 AS V4029,
+
+ descricao_V4032 AS V4032,
+
+ descricao_V4033 AS V4033,
+
+ descricao_V40331 AS V40331,
+
+ descricao_V403311 AS V403311,
+
+ dados.V403312 as V403312,
+
+ descricao_V40332 AS V40332,
+
+ descricao_V403321 AS V403321,
+
+ dados.V403322 as V403322,
+
+ descricao_V40333 AS V40333,
+
+ descricao_V403331 AS V403331,
+
+ descricao_V4034 AS V4034,
+
+ descricao_V40341 AS V40341,
+
+ descricao_V403411 AS V403411,
+
+ dados.V403412 as V403412,
+
+ descricao_V40342 AS V40342,
+
+ descricao_V403421 AS V403421,
+
+ dados.V403422 as V403422,
+
+ dados.V4039 as V4039,
+
+ dados.V4039C as V4039C,
+
+ descricao_V4040 AS V4040,
+
+ dados.V40401 as V40401,
+
+ dados.V40402 as V40402,
+
+ dados.V40403 as V40403,
+
+ dados.V4041 as V4041,
+
+ descricao_V4043 AS V4043,
+
+ descricao_V40431 AS V40431,
+
+ dados.V4044 as V4044,
+
+ descricao_V4045 AS V4045,
+
+ descricao_V4046 AS V4046,
+
+ descricao_V4047 AS V4047,
+
+ descricao_V4048 AS V4048,
+
+ descricao_V4049 AS V4049,
+
+ descricao_V4050 AS V4050,
+
+ descricao_V40501 AS V40501,
+
+ descricao_V405011 AS V405011,
+
+ dados.V405012 as V405012,
+
+ descricao_V40502 AS V40502,
+
+ descricao_V405021 AS V405021,
+
+ dados.V405022 as V405022,
+
+ descricao_V40503 AS V40503,
+
+ descricao_V405031 AS V405031,
+
+ descricao_V4051 AS V4051,
+
+ descricao_V40511 AS V40511,
+
+ descricao_V405111 AS V405111,
+
+ dados.V405112 as V405112,
+
+ descricao_V40512 AS V40512,
+
+ descricao_V405121 AS V405121,
+
+ dados.V405122 as V405122,
+
+ dados.V4056 as V4056,
+
+ dados.V4056C as V4056C,
+
+ descricao_V4057 AS V4057,
+
+ descricao_V4058 AS V4058,
+
+ descricao_V40581 AS V40581,
+
+ descricao_V405811 AS V405811,
+
+ dados.V405812 as V405812,
+
+ descricao_V40582 AS V40582,
+
+ dados.V405821 as V405821,
+
+ dados.V405822 as V405822,
+
+ descricao_V40583 AS V40583,
+
+ descricao_V405831 AS V405831,
+
+ descricao_V40584 AS V40584,
+
+ descricao_V4059 AS V4059,
+
+ descricao_V40591 AS V40591,
+
+ descricao_V405911 AS V405911,
+
+ dados.V405912 as V405912,
+
+ descricao_V40592 AS V40592,
+
+ descricao_V405921 AS V405921,
+
+ dados.V405922 as V405922,
+
+ dados.V4062 as V4062,
+
+ dados.V4062C as V4062C,
+
+ descricao_V4063 AS V4063,
+
+ descricao_V4063A AS V4063A,
+
+ descricao_V4064 AS V4064,
+
+ descricao_V4064A AS V4064A,
+
+ descricao_V4071 AS V4071,
+
+ descricao_V4072 AS V4072,
+
+ descricao_V4072A AS V4072A,
+
+ descricao_V4073 AS V4073,
+
+ descricao_V4074 AS V4074,
+
+ descricao_V4074A AS V4074A,
+
+ descricao_V4075A AS V4075A,
+
+ dados.V4075A1 as V4075A1,
+
+ descricao_V4076 AS V4076,
+
+ dados.V40761 as V40761,
+
+ dados.V40762 as V40762,
+
+ dados.V40763 as V40763,
+
+ descricao_V4077 AS V4077,
+
+ descricao_V4078 AS V4078,
+
+ descricao_V4078A AS V4078A,
+
+ descricao_V4082 AS V4082,
+
+ descricao_VD2002 AS VD2002,
+
+ dados.VD2003 as VD2003,
+
+ descricao_VD2004 AS VD2004,
+
+ descricao_VD3004 AS VD3004,
+
+ dados.VD3005 as VD3005,
+
+ descricao_VD3006 AS VD3006,
+
+ descricao_VD4001 AS VD4001,
+
+ descricao_VD4002 AS VD4002,
+
+ descricao_VD4003 AS VD4003,
+
+ descricao_VD4004 AS VD4004,
+
+ descricao_VD4004A AS VD4004A,
+
+ descricao_VD4005 AS VD4005,
+
+ descricao_VD4007 AS VD4007,
+
+ descricao_VD4008 AS VD4008,
+
+ descricao_VD4009 AS VD4009,
+
+ descricao_VD4010 AS VD4010,
+
+ descricao_VD4011 AS VD4011,
+
+ descricao_VD4012 AS VD4012,
+
+ descricao_VD4013 AS VD4013,
+
+ descricao_VD4014 AS VD4014,
+
+ descricao_VD4015 AS VD4015,
+
+ dados.VD4016 as VD4016,
+
+ dados.VD4017 as VD4017,
+
+ descricao_VD4018 AS VD4018,
+
+ dados.VD4019 as VD4019,
+
+ dados.VD4020 as VD4020,
+
+ descricao_VD4023 AS VD4023,
+
+ descricao_VD4030 AS VD4030,
+
+ dados.VD4031 as VD4031,
+
+ dados.VD4032 as VD4032,
+
+ dados.VD4033 as VD4033,
+
+ dados.VD4034 as VD4034,
+
+ dados.VD4035 as VD4035,
+
+ descricao_VD4036 AS VD4036,
+
+ descricao_VD4037 AS VD4037,
+
+ dados.V1028001 as V1028001,
+
+ dados.V1028002 as V1028002,
+
+ dados.V1028003 as V1028003,
+
+ dados.V1028004 as V1028004,
+
+ dados.V1028005 as V1028005,
+
+ dados.V1028006 as V1028006,
+
+ dados.V1028007 as V1028007,
+
+ dados.V1028008 as V1028008,
+
+ dados.V1028009 as V1028009,
+
+ dados.V1028010 as V1028010,
+
+ dados.V1028011 as V1028011,
+
+ dados.V1028012 as V1028012,
+
+ dados.V1028013 as V1028013,
+
+ dados.V1028014 as V1028014,
+
+ dados.V1028015 as V1028015,
+
+ dados.V1028016 as V1028016,
+
+ dados.V1028017 as V1028017,
+
+ dados.V1028018 as V1028018,
+
+ dados.V1028019 as V1028019,
+
+ dados.V1028020 as V1028020,
+
+ dados.V1028021 as V1028021,
+
+ dados.V1028022 as V1028022,
+
+ dados.V1028023 as V1028023,
+
+ dados.V1028024 as V1028024,
+
+ dados.V1028025 as V1028025,
+
+ dados.V1028026 as V1028026,
+
+ dados.V1028027 as V1028027,
+
+ dados.V1028028 as V1028028,
+
+ dados.V1028029 as V1028029,
+
+ dados.V1028030 as V1028030,
+
+ dados.V1028031 as V1028031,
+
+ dados.V1028032 as V1028032,
+
+ dados.V1028033 as V1028033,
+
+ dados.V1028034 as V1028034,
+
+ dados.V1028035 as V1028035,
+
+ dados.V1028036 as V1028036,
+
+ dados.V1028037 as V1028037,
+
+ dados.V1028038 as V1028038,
+
+ dados.V1028039 as V1028039,
+
+ dados.V1028040 as V1028040,
+
+ dados.V1028041 as V1028041,
+
+ dados.V1028042 as V1028042,
+
+ dados.V1028043 as V1028043,
+
+ dados.V1028044 as V1028044,
+
+ dados.V1028045 as V1028045,
+
+ dados.V1028046 as V1028046,
+
+ dados.V1028047 as V1028047,
+
+ dados.V1028048 as V1028048,
+
+ dados.V1028049 as V1028049,
+
+ dados.V1028050 as V1028050,
+
+ dados.V1028051 as V1028051,
+
+ dados.V1028052 as V1028052,
+
+ dados.V1028053 as V1028053,
+
+ dados.V1028054 as V1028054,
+
+ dados.V1028055 as V1028055,
+
+ dados.V1028056 as V1028056,
+
+ dados.V1028057 as V1028057,
+
+ dados.V1028058 as V1028058,
+
+ dados.V1028059 as V1028059,
+
+ dados.V1028060 as V1028060,
+
+ dados.V1028061 as V1028061,
+
+ dados.V1028062 as V1028062,
+
+ dados.V1028063 as V1028063,
+
+ dados.V1028064 as V1028064,
+
+ dados.V1028065 as V1028065,
+
+ dados.V1028066 as V1028066,
+
+ dados.V1028067 as V1028067,
+
+ dados.V1028068 as V1028068,
+
+ dados.V1028069 as V1028069,
+
+ dados.V1028070 as V1028070,
+
+ dados.V1028071 as V1028071,
+
+ dados.V1028072 as V1028072,
+
+ dados.V1028073 as V1028073,
+
+ dados.V1028074 as V1028074,
+
+ dados.V1028075 as V1028075,
+
+ dados.V1028076 as V1028076,
+
+ dados.V1028077 as V1028077,
+
+ dados.V1028078 as V1028078,
+
+ dados.V1028079 as V1028079,
+
+ dados.V1028080 as V1028080,
+
+ dados.V1028081 as V1028081,
+
+ dados.V1028082 as V1028082,
+
+ dados.V1028083 as V1028083,
+
+ dados.V1028084 as V1028084,
+
+ dados.V1028085 as V1028085,
+
+ dados.V1028086 as V1028086,
+
+ dados.V1028087 as V1028087,
+
+ dados.V1028088 as V1028088,
+
+ dados.V1028089 as V1028089,
+
+ dados.V1028090 as V1028090,
+
+ dados.V1028091 as V1028091,
+
+ dados.V1028092 as V1028092,
+
+ dados.V1028093 as V1028093,
+
+ dados.V1028094 as V1028094,
+
+ dados.V1028095 as V1028095,
+
+ dados.V1028096 as V1028096,
+
+ dados.V1028097 as V1028097,
+
+ dados.V1028098 as V1028098,
+
+ dados.V1028099 as V1028099,
+
+ dados.V1028100 as V1028100,
+
+ dados.V1028101 as V1028101,
+
+ dados.V1028102 as V1028102,
+
+ dados.V1028103 as V1028103,
+
+ dados.V1028104 as V1028104,
+
+ dados.V1028105 as V1028105,
+
+ dados.V1028106 as V1028106,
+
+ dados.V1028107 as V1028107,
+
+ dados.V1028108 as V1028108,
+
+ dados.V1028109 as V1028109,
+
+ dados.V1028110 as V1028110,
+
+ dados.V1028111 as V1028111,
+
+ dados.V1028112 as V1028112,
+
+ dados.V1028113 as V1028113,
+
+ dados.V1028114 as V1028114,
+
+ dados.V1028115 as V1028115,
+
+ dados.V1028116 as V1028116,
+
+ dados.V1028117 as V1028117,
+
+ dados.V1028118 as V1028118,
+
+ dados.V1028119 as V1028119,
+
+ dados.V1028120 as V1028120,
+
+ dados.V1028121 as V1028121,
+
+ dados.V1028122 as V1028122,
+
+ dados.V1028123 as V1028123,
+
+ dados.V1028124 as V1028124,
+
+ dados.V1028125 as V1028125,
+
+ dados.V1028126 as V1028126,
+
+ dados.V1028127 as V1028127,
+
+ dados.V1028128 as V1028128,
+
+ dados.V1028129 as V1028129,
+
+ dados.V1028130 as V1028130,
+
+ dados.V1028131 as V1028131,
+
+ dados.V1028132 as V1028132,
+
+ dados.V1028133 as V1028133,
+
+ dados.V1028134 as V1028134,
+
+ dados.V1028135 as V1028135,
+
+ dados.V1028136 as V1028136,
+
+ dados.V1028137 as V1028137,
+
+ dados.V1028138 as V1028138,
+
+ dados.V1028139 as V1028139,
+
+ dados.V1028140 as V1028140,
+
+ dados.V1028141 as V1028141,
+
+ dados.V1028142 as V1028142,
+
+ dados.V1028143 as V1028143,
+
+ dados.V1028144 as V1028144,
+
+ dados.V1028145 as V1028145,
+
+ dados.V1028146 as V1028146,
+
+ dados.V1028147 as V1028147,
+
+ dados.V1028148 as V1028148,
+
+ dados.V1028149 as V1028149,
+
+ dados.V1028150 as V1028150,
+
+ dados.V1028151 as V1028151,
+
+ dados.V1028152 as V1028152,
+
+ dados.V1028153 as V1028153,
+
+ dados.V1028154 as V1028154,
+
+ dados.V1028155 as V1028155,
+
+ dados.V1028156 as V1028156,
+
+ dados.V1028157 as V1028157,
+
+ dados.V1028158 as V1028158,
+
+ dados.V1028159 as V1028159,
+
+ dados.V1028160 as V1028160,
+
+ dados.V1028161 as V1028161,
+
+ dados.V1028162 as V1028162,
+
+ dados.V1028163 as V1028163,
+
+ dados.V1028164 as V1028164,
+
+ dados.V1028165 as V1028165,
+
+ dados.V1028166 as V1028166,
+
+ dados.V1028167 as V1028167,
+
+ dados.V1028168 as V1028168,
+
+ dados.V1028169 as V1028169,
+
+ dados.V1028170 as V1028170,
+
+ dados.V1028171 as V1028171,
+
+ dados.V1028172 as V1028172,
+
+ dados.V1028173 as V1028173,
+
+ dados.V1028174 as V1028174,
+
+ dados.V1028175 as V1028175,
+
+ dados.V1028176 as V1028176,
+
+ dados.V1028177 as V1028177,
+
+ dados.V1028178 as V1028178,
+
+ dados.V1028179 as V1028179,
+
+ dados.V1028180 as V1028180,
+
+ dados.V1028181 as V1028181,
+
+ dados.V1028182 as V1028182,
+
+ dados.V1028183 as V1028183,
+
+ dados.V1028184 as V1028184,
+
+ dados.V1028185 as V1028185,
+
+ dados.V1028186 as V1028186,
+
+ dados.V1028187 as V1028187,
+
+ dados.V1028188 as V1028188,
+
+ dados.V1028189 as V1028189,
+
+ dados.V1028190 as V1028190,
+
+ dados.V1028191 as V1028191,
+
+ dados.V1028192 as V1028192,
+
+ dados.V1028193 as V1028193,
+
+ dados.V1028194 as V1028194,
+
+ dados.V1028195 as V1028195,
+
+ dados.V1028196 as V1028196,
+
+ dados.V1028197 as V1028197,
+
+ dados.V1028198 as V1028198,
+
+ dados.V1028199 as V1028199,
+
+ dados.V1028200 as V1028200,
+
+ dados.habitual as habitual,
+
+ dados.efetivo as efetivo
+
+FROM `basedosdados.br_ibge_pnadc.microdados` AS dados
+
+LEFT JOIN (SELECT DISTINCT id_uf,sigla,nome FROM 
+
+`basedosdados.br_bd_diretorios_brasil.uf`) AS diretorio_id_uf
+
+ ON dados.id_uf = diretorio_id_uf.id_uf
+
+LEFT JOIN (SELECT DISTINCT sigla,nome FROM 
+
+`basedosdados.br_bd_diretorios_brasil.uf`) AS diretorio_sigla_uf
+
+ ON dados.sigla_uf = diretorio_sigla_uf.sigla
+
+LEFT JOIN `dicionario_capital`
+
+ ON dados.capital = chave_capital
+
+LEFT JOIN `dicionario_rm_ride`
+
+ ON dados.rm_ride = chave_rm_ride
+
+LEFT JOIN `dicionario_V1022`
+
+ ON dados.V1022 = chave_V1022
+
+LEFT JOIN `dicionario_V1023`
+
+ ON dados.V1023 = chave_V1023
+
+LEFT JOIN `dicionario_V2005`
+
+ ON dados.V2005 = chave_V2005
+
+LEFT JOIN `dicionario_V2007`
+
+ ON dados.V2007 = chave_V2007
+
+LEFT JOIN `dicionario_V2010`
+
+ ON dados.V2010 = chave_V2010
+
+LEFT JOIN `dicionario_V3001`
+
+ ON dados.V3001 = chave_V3001
+
+LEFT JOIN `dicionario_V3002`
+
+ ON dados.V3002 = chave_V3002
+
+LEFT JOIN `dicionario_V3002A`
+
+ ON dados.V3002A = chave_V3002A
+
+LEFT JOIN `dicionario_V3003`
+
+ ON dados.V3003 = chave_V3003
+
+LEFT JOIN `dicionario_V3003A`
+
+ ON dados.V3003A = chave_V3003A
+
+LEFT JOIN `dicionario_V3004`
+
+ ON dados.V3004 = chave_V3004
+
+LEFT JOIN `dicionario_V3005`
+
+ ON dados.V3005 = chave_V3005
+
+LEFT JOIN `dicionario_V3005A`
+
+ ON dados.V3005A = chave_V3005A
+
+LEFT JOIN `dicionario_V3006`
+
+ ON dados.V3006 = chave_V3006
+
+LEFT JOIN `dicionario_V3006A`
+
+ ON dados.V3006A = chave_V3006A
+
+LEFT JOIN `dicionario_V3007`
+
+ ON dados.V3007 = chave_V3007
+
+LEFT JOIN `dicionario_V3008`
+
+ ON dados.V3008 = chave_V3008
+
+LEFT JOIN `dicionario_V3009`
+
+ ON dados.V3009 = chave_V3009
+
+LEFT JOIN `dicionario_V3009A`
+
+ ON dados.V3009A = chave_V3009A
+
+LEFT JOIN `dicionario_V3010`
+
+ ON dados.V3010 = chave_V3010
+
+LEFT JOIN `dicionario_V3011`
+
+ ON dados.V3011 = chave_V3011
+
+LEFT JOIN `dicionario_V3011A`
+
+ ON dados.V3011A = chave_V3011A
+
+LEFT JOIN `dicionario_V3012`
+
+ ON dados.V3012 = chave_V3012
+
+LEFT JOIN `dicionario_V3013`
+
+ ON dados.V3013 = chave_V3013
+
+LEFT JOIN `dicionario_V3013A`
+
+ ON dados.V3013A = chave_V3013A
+
+LEFT JOIN `dicionario_V3013B`
+
+ ON dados.V3013B = chave_V3013B
+
+LEFT JOIN `dicionario_V3014`
+
+ ON dados.V3014 = chave_V3014
+
+LEFT JOIN `dicionario_V4001`
+
+ ON dados.V4001 = chave_V4001
+
+LEFT JOIN `dicionario_V4002`
+
+ ON dados.V4002 = chave_V4002
+
+LEFT JOIN `dicionario_V4003`
+
+ ON dados.V4003 = chave_V4003
+
+LEFT JOIN `dicionario_V4004`
+
+ ON dados.V4004 = chave_V4004
+
+LEFT JOIN `dicionario_V4005`
+
+ ON dados.V4005 = chave_V4005
+
+LEFT JOIN `dicionario_V4006`
+
+ ON dados.V4006 = chave_V4006
+
+LEFT JOIN `dicionario_V4006A`
+
+ ON dados.V4006A = chave_V4006A
+
+LEFT JOIN `dicionario_V4007`
+
+ ON dados.V4007 = chave_V4007
+
+LEFT JOIN `dicionario_V4008`
+
+ ON dados.V4008 = chave_V4008
+
+LEFT JOIN `dicionario_V4009`
+
+ ON dados.V4009 = chave_V4009
+
+LEFT JOIN `dicionario_V4010`
+
+ ON dados.V4010 = chave_V4010
+
+LEFT JOIN `dicionario_V4012`
+
+ ON dados.V4012 = chave_V4012
+
+LEFT JOIN `dicionario_V40121`
+
+ ON dados.V40121 = chave_V40121
+
+LEFT JOIN `dicionario_V40132`
+
+ ON dados.V40132 = chave_V40132
+
+LEFT JOIN `dicionario_V40132A`
+
+ ON dados.V40132A = chave_V40132A
+
+LEFT JOIN `dicionario_V4014`
+
+ ON dados.V4014 = chave_V4014
+
+LEFT JOIN `dicionario_V4015`
+
+ ON dados.V4015 = chave_V4015
+
+LEFT JOIN `dicionario_V40151`
+
+ ON dados.V40151 = chave_V40151
+
+LEFT JOIN `dicionario_V4016`
+
+ ON dados.V4016 = chave_V4016
+
+LEFT JOIN `dicionario_V4017`
+
+ ON dados.V4017 = chave_V4017
+
+LEFT JOIN `dicionario_V40171`
+
+ ON dados.V40171 = chave_V40171
+
+LEFT JOIN `dicionario_V4018`
+
+ ON dados.V4018 = chave_V4018
+
+LEFT JOIN `dicionario_V4019`
+
+ ON dados.V4019 = chave_V4019
+
+LEFT JOIN `dicionario_V4020`
+
+ ON dados.V4020 = chave_V4020
+
+LEFT JOIN `dicionario_V4021`
+
+ ON dados.V4021 = chave_V4021
+
+LEFT JOIN `dicionario_V4022`
+
+ ON dados.V4022 = chave_V4022
+
+LEFT JOIN `dicionario_V4024`
+
+ ON dados.V4024 = chave_V4024
+
+LEFT JOIN `dicionario_V4025`
+
+ ON dados.V4025 = chave_V4025
+
+LEFT JOIN `dicionario_V4026`
+
+ ON dados.V4026 = chave_V4026
+
+LEFT JOIN `dicionario_V4027`
+
+ ON dados.V4027 = chave_V4027
+
+LEFT JOIN `dicionario_V4028`
+
+ ON dados.V4028 = chave_V4028
+
+LEFT JOIN `dicionario_V4029`
+
+ ON dados.V4029 = chave_V4029
+
+LEFT JOIN `dicionario_V4032`
+
+ ON dados.V4032 = chave_V4032
+
+LEFT JOIN `dicionario_V4033`
+
+ ON dados.V4033 = chave_V4033
+
+LEFT JOIN `dicionario_V40331`
+
+ ON dados.V40331 = chave_V40331
+
+LEFT JOIN `dicionario_V403311`
+
+ ON dados.V403311 = chave_V403311
+
+LEFT JOIN `dicionario_V40332`
+
+ ON dados.V40332 = chave_V40332
+
+LEFT JOIN `dicionario_V403321`
+
+ ON dados.V403321 = chave_V403321
+
+LEFT JOIN `dicionario_V40333`
+
+ ON dados.V40333 = chave_V40333
+
+LEFT JOIN `dicionario_V403331`
+
+ ON dados.V403331 = chave_V403331
+
+LEFT JOIN `dicionario_V4034`
+
+ ON dados.V4034 = chave_V4034
+
+LEFT JOIN `dicionario_V40341`
+
+ ON dados.V40341 = chave_V40341
+
+LEFT JOIN `dicionario_V403411`
+
+ ON dados.V403411 = chave_V403411
+
+LEFT JOIN `dicionario_V40342`
+
+ ON dados.V40342 = chave_V40342
+
+LEFT JOIN `dicionario_V403421`
+
+ ON dados.V403421 = chave_V403421
+
+LEFT JOIN `dicionario_V4040`
+
+ ON dados.V4040 = chave_V4040
+
+LEFT JOIN `dicionario_V4043`
+
+ ON dados.V4043 = chave_V4043
+
+LEFT JOIN `dicionario_V40431`
+
+ ON dados.V40431 = chave_V40431
+
+LEFT JOIN `dicionario_V4045`
+
+ ON dados.V4045 = chave_V4045
+
+LEFT JOIN `dicionario_V4046`
+
+ ON dados.V4046 = chave_V4046
+
+LEFT JOIN `dicionario_V4047`
+
+ ON dados.V4047 = chave_V4047
+
+LEFT JOIN `dicionario_V4048`
+
+ ON dados.V4048 = chave_V4048
+
+LEFT JOIN `dicionario_V4049`
+
+ ON dados.V4049 = chave_V4049
+
+LEFT JOIN `dicionario_V4050`
+
+ ON dados.V4050 = chave_V4050
+
+LEFT JOIN `dicionario_V40501`
+
+ ON dados.V40501 = chave_V40501
+
+LEFT JOIN `dicionario_V405011`
+
+ ON dados.V405011 = chave_V405011
+
+LEFT JOIN `dicionario_V40502`
+
+ ON dados.V40502 = chave_V40502
+
+LEFT JOIN `dicionario_V405021`
+
+ ON dados.V405021 = chave_V405021
+
+LEFT JOIN `dicionario_V40503`
+
+ ON dados.V40503 = chave_V40503
+
+LEFT JOIN `dicionario_V405031`
+
+ ON dados.V405031 = chave_V405031
+
+LEFT JOIN `dicionario_V4051`
+
+ ON dados.V4051 = chave_V4051
+
+LEFT JOIN `dicionario_V40511`
+
+ ON dados.V40511 = chave_V40511
+
+LEFT JOIN `dicionario_V405111`
+
+ ON dados.V405111 = chave_V405111
+
+LEFT JOIN `dicionario_V40512`
+
+ ON dados.V40512 = chave_V40512
+
+LEFT JOIN `dicionario_V405121`
+
+ ON dados.V405121 = chave_V405121
+
+LEFT JOIN `dicionario_V4057`
+
+ ON dados.V4057 = chave_V4057
+
+LEFT JOIN `dicionario_V4058`
+
+ ON dados.V4058 = chave_V4058
+
+LEFT JOIN `dicionario_V40581`
+
+ ON dados.V40581 = chave_V40581
+
+LEFT JOIN `dicionario_V405811`
+
+ ON dados.V405811 = chave_V405811
+
+LEFT JOIN `dicionario_V40582`
+
+ ON dados.V40582 = chave_V40582
+
+LEFT JOIN `dicionario_V40583`
+
+ ON dados.V40583 = chave_V40583
+
+LEFT JOIN `dicionario_V405831`
+
+ ON dados.V405831 = chave_V405831
+
+LEFT JOIN `dicionario_V40584`
+
+ ON dados.V40584 = chave_V40584
+
+LEFT JOIN `dicionario_V4059`
+
+ ON dados.V4059 = chave_V4059
+
+LEFT JOIN `dicionario_V40591`
+
+ ON dados.V40591 = chave_V40591
+
+LEFT JOIN `dicionario_V405911`
+
+ ON dados.V405911 = chave_V405911
+
+LEFT JOIN `dicionario_V40592`
+
+ ON dados.V40592 = chave_V40592
+
+LEFT JOIN `dicionario_V405921`
+
+ ON dados.V405921 = chave_V405921
+
+LEFT JOIN `dicionario_V4063`
+
+ ON dados.V4063 = chave_V4063
+
+LEFT JOIN `dicionario_V4063A`
+
+ ON dados.V4063A = chave_V4063A
+
+LEFT JOIN `dicionario_V4064`
+
+ ON dados.V4064 = chave_V4064
+
+LEFT JOIN `dicionario_V4064A`
+
+ ON dados.V4064A = chave_V4064A
+
+LEFT JOIN `dicionario_V4071`
+
+ ON dados.V4071 = chave_V4071
+
+LEFT JOIN `dicionario_V4072`
+
+ ON dados.V4072 = chave_V4072
+
+LEFT JOIN `dicionario_V4072A`
+
+ ON dados.V4072A = chave_V4072A
+
+LEFT JOIN `dicionario_V4073`
+
+ ON dados.V4073 = chave_V4073
+
+LEFT JOIN `dicionario_V4074`
+
+ ON dados.V4074 = chave_V4074
+
+LEFT JOIN `dicionario_V4074A`
+
+ ON dados.V4074A = chave_V4074A
+
+LEFT JOIN `dicionario_V4075A`
+
+ ON dados.V4075A = chave_V4075A
+
+LEFT JOIN `dicionario_V4076`
+
+ ON dados.V4076 = chave_V4076
+
+LEFT JOIN `dicionario_V4077`
+
+ ON dados.V4077 = chave_V4077
+
+LEFT JOIN `dicionario_V4078`
+
+ ON dados.V4078 = chave_V4078
+
+LEFT JOIN `dicionario_V4078A`
+
+ ON dados.V4078A = chave_V4078A
+
+LEFT JOIN `dicionario_V4082`
+
+ ON dados.V4082 = chave_V4082
+
+LEFT JOIN `dicionario_VD2002`
+
+ ON dados.VD2002 = chave_VD2002
+
+LEFT JOIN `dicionario_VD2004`
+
+ ON dados.VD2004 = chave_VD2004
+
+LEFT JOIN `dicionario_VD3004`
+
+ ON dados.VD3004 = chave_VD3004
+
+LEFT JOIN `dicionario_VD3006`
+
+ ON dados.VD3006 = chave_VD3006
+
+LEFT JOIN `dicionario_VD4001`
+
+ ON dados.VD4001 = chave_VD4001
+
+LEFT JOIN `dicionario_VD4002`
+
+ ON dados.VD4002 = chave_VD4002
+
+LEFT JOIN `dicionario_VD4003`
+
+ ON dados.VD4003 = chave_VD4003
+
+LEFT JOIN `dicionario_VD4004`
+
+ ON dados.VD4004 = chave_VD4004
+
+LEFT JOIN `dicionario_VD4004A`
+
+ ON dados.VD4004A = chave_VD4004A
+
+LEFT JOIN `dicionario_VD4005`
+
+ ON dados.VD4005 = chave_VD4005
+
+LEFT JOIN `dicionario_VD4007`
+
+ ON dados.VD4007 = chave_VD4007
+
+LEFT JOIN `dicionario_VD4008`
+
+ ON dados.VD4008 = chave_VD4008
+
+LEFT JOIN `dicionario_VD4009`
+
+ ON dados.VD4009 = chave_VD4009
+
+LEFT JOIN `dicionario_VD4010`
+
+ ON dados.VD4010 = chave_VD4010
+
+LEFT JOIN `dicionario_VD4011`
+
+ ON dados.VD4011 = chave_VD4011
+
+LEFT JOIN `dicionario_VD4012`
+
+ ON dados.VD4012 = chave_VD4012
+
+LEFT JOIN `dicionario_VD4013`
+
+ ON dados.VD4013 = chave_VD4013
+
+LEFT JOIN `dicionario_VD4014`
+
+ ON dados.VD4014 = chave_VD4014
+
+LEFT JOIN `dicionario_VD4015`
+
+ ON dados.VD4015 = chave_VD4015
+
+LEFT JOIN `dicionario_VD4018`
+
+ ON dados.VD4018 = chave_VD4018
+
+LEFT JOIN `dicionario_VD4023`
+
+ ON dados.VD4023 = chave_VD4023
+
+LEFT JOIN `dicionario_VD4030`
+
+ ON dados.VD4030 = chave_VD4030
+
+LEFT JOIN `dicionario_VD4036`
+
+ ON dados.VD4036 = chave_VD4036
+
+LEFT JOIN `dicionario_VD4037`
+
+ ON dados.VD4037 = chave_VD4037
+
