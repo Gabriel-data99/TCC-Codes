@@ -1,0 +1,195 @@
+SELECT
+
+ dados.ano as ano,
+
+ dados.id_municipio AS id_municipio,
+
+ diretorio_id_municipio.nome AS id_municipio_nome,
+
+ dados.expectativa_vida as expectativa_vida,
+
+ dados.fecundidade_total as fecundidade_total,
+
+ dados.mortalidade_1 as mortalidade_1,
+
+ dados.mortalidade_5 as mortalidade_5,
+
+ dados.razao_dependencia as razao_dependencia,
+
+ dados.prob_sobrevivencia_40 as prob_sobrevivencia_40,
+
+ dados.prob_sobrevivencia_60 as prob_sobrevivencia_60,
+
+ dados.taxa_envelhecimento as taxa_envelhecimento,
+
+ dados.renda_pc_max_quintil_1 as renda_pc_max_quintil_1,
+
+ dados.renda_pc_max_quintil_2 as renda_pc_max_quintil_2,
+
+ dados.renda_pc_max_quintil_3 as renda_pc_max_quintil_3,
+
+ dados.renda_pc_max_quintil_4 as renda_pc_max_quintil_4,
+
+ dados.renda_pc_max_decil_9 as renda_pc_max_decil_9,
+
+ dados.indice_gini as indice_gini,
+
+ dados.prop_pobreza_extrema as prop_pobreza_extrema,
+
+ dados.prop_pobreza_extrema_criancas as prop_pobreza_extrema_criancas,
+
+ dados.prop_pobreza as prop_pobreza,
+
+ dados.prop_pobreza_criancas as prop_pobreza_criancas,
+
+ dados.prop_vulner_pobreza as prop_vulner_pobreza,
+
+ dados.prop_vulner_pobreza_criancas as prop_vulner_pobreza_criancas,
+
+ dados.prop_renda_10_ricos as prop_renda_10_ricos,
+
+ dados.prop_renda_20_pobres as prop_renda_20_pobres,
+
+ dados.prop_renda_20_ricos as prop_renda_20_ricos,
+
+ dados.prop_renda_40_pobres as prop_renda_40_pobres,
+
+ dados.prop_renda_60_pobres as prop_renda_60_pobres,
+
+ dados.prop_renda_80_pobres as prop_renda_80_pobres,
+
+ dados.prop_renda_trabalho as prop_renda_trabalho,
+
+ dados.razao_10_ricos_40_pobres as razao_10_ricos_40_pobres,
+
+ dados.razao_20_ricos_40_pobres as razao_20_ricos_40_pobres,
+
+ dados.renda_pc as renda_pc,
+
+ dados.renda_pc_quintil_1 as renda_pc_quintil_1,
+
+ dados.renda_pc_decil_10 as renda_pc_decil_10,
+
+ dados.renda_pc_quintil_2 as renda_pc_quintil_2,
+
+ dados.renda_pc_quintil_3 as renda_pc_quintil_3,
+
+ dados.renda_pc_quintil_4 as renda_pc_quintil_4,
+
+ dados.renda_pc_quintil_5 as renda_pc_quintil_5,
+
+ dados.renda_pc_exc_renda_nula as renda_pc_exc_renda_nula,
+
+ dados.renda_pc_pobreza_extrema as renda_pc_pobreza_extrema,
+
+ dados.renda_pc_pobreza as renda_pc_pobreza,
+
+ dados.renda_pc_vulner_pobreza as renda_pc_vulner_pobreza,
+
+ dados.indice_theil as indice_theil,
+
+ dados.prop_trabalhadores_conta_proria as 
+
+prop_trabalhadores_conta_proria,
+
+ dados.prop_empregadores as prop_empregadores,
+
+ dados.prop_ocupados_renda_0 as prop_ocupados_renda_0,
+
+ dados.prop_ocupados_renda_1_sm as prop_ocupados_renda_1_sm,
+
+ dados.prop_ocupados_renda_2_sm as prop_ocupados_renda_2_sm,
+
+ dados.prop_ocupados_renda_3_sm as prop_ocupados_renda_3_sm,
+
+ dados.prop_ocupados_renda_5_sm as prop_ocupados_renda_5_sm,
+
+ dados.renda_media_ocupados as renda_media_ocupados,
+
+ dados.taxa_desocupacao as taxa_desocupacao,
+
+ dados.taxa_desocupacao_10_14 as taxa_desocupacao_10_14,
+
+ dados.taxa_desocupacao_15_17 as taxa_desocupacao_15_17,
+
+ dados.taxa_desocupacao_18_24 as taxa_desocupacao_18_24,
+
+ dados.taxa_desocupacao_18_mais as taxa_desocupacao_18_mais,
+
+ dados.taxa_desocupacao_25_29 as taxa_desocupacao_25_29,
+
+ dados.indice_treil_trabalho as indice_treil_trabalho,
+
+ dados.taxa_densidade_2_mais as taxa_densidade_2_mais,
+
+ dados.populacao_18_mais as populacao_18_mais,
+
+ dados.populacao_18_20 as populacao_18_20,
+
+ dados.populacao_18_24 as populacao_18_24,
+
+ dados.populacao_19_21 as populacao_19_21,
+
+ dados.populacao_25_mais as populacao_25_mais,
+
+ dados.populacao_4 as populacao_4,
+
+ dados.populacao_5 as populacao_5,
+
+ dados.populacao_6 as populacao_6,
+
+ dados.populacao_6_10 as populacao_6_10,
+
+ dados.populacao_6_17 as populacao_6_17,
+
+ dados.populacao_65_mais as populacao_65_mais,
+
+ dados.populacao as populacao,
+
+ dados.populacao_urbana as populacao_urbana,
+
+ dados.populacao_rural as populacao_rural,
+
+ dados.populacao_dom_pp as populacao_dom_pp,
+
+ dados.populacao_dom_pp_exc_renda_nula as 
+
+populacao_dom_pp_exc_renda_nula,
+
+ dados.pea as pea,
+
+ dados.pea_10_14 as pea_10_14,
+
+ dados.pea_15_17 as pea_15_17,
+
+ dados.pea_18_mais as pea_18_mais,
+
+ dados.pia as pia,
+
+ dados.pia_10_14 as pia_10_14,
+
+ dados.pia_15_17 as pia_15_17,
+
+ dados.pia_18_mais as pia_18_mais,
+
+ dados.indice_escolaridade as indice_escolaridade,
+
+ dados.indice_frequencia_escolar as indice_frequencia_escolar,
+
+ dados.idhm as idhm,
+
+ dados.idhm_e as idhm_e,
+
+ dados.idhm_l as idhm_l,
+
+ dados.idhm_r as idhm_r
+
+FROM `basedosdados.mundo_onu_adh.municipio` AS dados
+
+LEFT JOIN (SELECT DISTINCT id_municipio,nome FROM 
+
+`basedosdados.br_bd_diretorios_brasil.municipio`) AS diretorio_id_municipio
+
+ ON dados.id_municipio = diretorio_id_municipio.id_municipio
+
+ WHERE ano = 2010
