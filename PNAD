@@ -1,0 +1,2942 @@
+WITH 
+
+dicionario_capital AS (
+
+ SELECT
+
+ chave AS chave_capital,
+
+ valor AS descricao_capital
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'capital'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_rm_ride AS (
+
+ SELECT
+
+ chave AS chave_rm_ride,
+
+ valor AS descricao_rm_ride
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'rm_ride'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V1022 AS (
+
+ SELECT
+
+ chave AS chave_V1022,
+
+ valor AS descricao_V1022
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V1022'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V1023 AS (
+
+ SELECT
+
+ chave AS chave_V1023,
+
+ valor AS descricao_V1023
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V1023'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V2005 AS (
+
+ SELECT
+
+ chave AS chave_V2005,
+
+ valor AS descricao_V2005
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V2005'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V2007 AS (
+
+ SELECT
+
+ chave AS chave_V2007,
+
+ valor AS descricao_V2007
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V2007'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V2010 AS (
+
+ SELECT
+
+ chave AS chave_V2010,
+
+ valor AS descricao_V2010
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V2010'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3001 AS (
+
+ SELECT
+
+ chave AS chave_V3001,
+
+ valor AS descricao_V3001
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3001'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3002 AS (
+
+ SELECT
+
+ chave AS chave_V3002,
+
+ valor AS descricao_V3002
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3002'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3002A AS (
+
+ SELECT
+
+ chave AS chave_V3002A,
+
+ valor AS descricao_V3002A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3002A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3003 AS (
+
+ SELECT
+
+ chave AS chave_V3003,
+
+ valor AS descricao_V3003
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3003'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3003A AS (
+
+ SELECT
+
+ chave AS chave_V3003A,
+
+ valor AS descricao_V3003A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3003A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3004 AS (
+
+ SELECT
+
+ chave AS chave_V3004,
+
+ valor AS descricao_V3004
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3004'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3005 AS (
+
+ SELECT
+
+ chave AS chave_V3005,
+
+ valor AS descricao_V3005
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3005'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3005A AS (
+
+ SELECT
+
+ chave AS chave_V3005A,
+
+ valor AS descricao_V3005A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3005A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3006 AS (
+
+ SELECT
+
+ chave AS chave_V3006,
+
+ valor AS descricao_V3006
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3006'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3006A AS (
+
+ SELECT
+
+ chave AS chave_V3006A,
+
+ valor AS descricao_V3006A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3006A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3007 AS (
+
+ SELECT
+
+ chave AS chave_V3007,
+
+ valor AS descricao_V3007
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3007'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3008 AS (
+
+ SELECT
+
+ chave AS chave_V3008,
+
+ valor AS descricao_V3008
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3008'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3009 AS (
+
+ SELECT
+
+ chave AS chave_V3009,
+
+ valor AS descricao_V3009
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3009'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3009A AS (
+
+ SELECT
+
+ chave AS chave_V3009A,
+
+ valor AS descricao_V3009A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3009A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3010 AS (
+
+ SELECT
+
+ chave AS chave_V3010,
+
+ valor AS descricao_V3010
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3010'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3011 AS (
+
+ SELECT
+
+ chave AS chave_V3011,
+
+ valor AS descricao_V3011
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3011'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3011A AS (
+
+ SELECT
+
+ chave AS chave_V3011A,
+
+ valor AS descricao_V3011A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3011A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3012 AS (
+
+ SELECT
+
+ chave AS chave_V3012,
+
+ valor AS descricao_V3012
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3012'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3013 AS (
+
+ SELECT
+
+ chave AS chave_V3013,
+
+ valor AS descricao_V3013
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3013'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3013A AS (
+
+ SELECT
+
+ chave AS chave_V3013A,
+
+ valor AS descricao_V3013A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3013A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3013B AS (
+
+ SELECT
+
+ chave AS chave_V3013B,
+
+ valor AS descricao_V3013B
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3013B'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V3014 AS (
+
+ SELECT
+
+ chave AS chave_V3014,
+
+ valor AS descricao_V3014
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V3014'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4001 AS (
+
+ SELECT
+
+ chave AS chave_V4001,
+
+ valor AS descricao_V4001
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4001'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4002 AS (
+
+ SELECT
+
+ chave AS chave_V4002,
+
+ valor AS descricao_V4002
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4002'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4003 AS (
+
+ SELECT
+
+ chave AS chave_V4003,
+
+ valor AS descricao_V4003
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4003'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4004 AS (
+
+ SELECT
+
+ chave AS chave_V4004,
+
+ valor AS descricao_V4004
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4004'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4005 AS (
+
+ SELECT
+
+ chave AS chave_V4005,
+
+ valor AS descricao_V4005
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4005'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4006 AS (
+
+ SELECT
+
+ chave AS chave_V4006,
+
+ valor AS descricao_V4006
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4006'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4006A AS (
+
+ SELECT
+
+ chave AS chave_V4006A,
+
+ valor AS descricao_V4006A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4006A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4007 AS (
+
+ SELECT
+
+ chave AS chave_V4007,
+
+ valor AS descricao_V4007
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4007'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4008 AS (
+
+ SELECT
+
+ chave AS chave_V4008,
+
+ valor AS descricao_V4008
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4008'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4009 AS (
+
+ SELECT
+
+ chave AS chave_V4009,
+
+ valor AS descricao_V4009
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4009'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4010 AS (
+
+ SELECT
+
+ chave AS chave_V4010,
+
+ valor AS descricao_V4010
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4010'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4012 AS (
+
+ SELECT
+
+ chave AS chave_V4012,
+
+ valor AS descricao_V4012
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4012'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40121 AS (
+
+ SELECT
+
+ chave AS chave_V40121,
+
+ valor AS descricao_V40121
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40121'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40132 AS (
+
+ SELECT
+
+ chave AS chave_V40132,
+
+ valor AS descricao_V40132
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40132'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40132A AS (
+
+ SELECT
+
+ chave AS chave_V40132A,
+
+ valor AS descricao_V40132A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40132A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4014 AS (
+
+ SELECT
+
+ chave AS chave_V4014,
+
+ valor AS descricao_V4014
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4014'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4015 AS (
+
+ SELECT
+
+ chave AS chave_V4015,
+
+ valor AS descricao_V4015
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4015'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40151 AS (
+
+ SELECT
+
+ chave AS chave_V40151,
+
+ valor AS descricao_V40151
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40151'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4016 AS (
+
+ SELECT
+
+ chave AS chave_V4016,
+
+ valor AS descricao_V4016
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4016'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4017 AS (
+
+ SELECT
+
+ chave AS chave_V4017,
+
+ valor AS descricao_V4017
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4017'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40171 AS (
+
+ SELECT
+
+ chave AS chave_V40171,
+
+ valor AS descricao_V40171
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40171'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4018 AS (
+
+ SELECT
+
+ chave AS chave_V4018,
+
+ valor AS descricao_V4018
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4018'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4019 AS (
+
+ SELECT
+
+ chave AS chave_V4019,
+
+ valor AS descricao_V4019
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4019'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4020 AS (
+
+ SELECT
+
+ chave AS chave_V4020,
+
+ valor AS descricao_V4020
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4020'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4021 AS (
+
+ SELECT
+
+ chave AS chave_V4021,
+
+ valor AS descricao_V4021
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4021'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4022 AS (
+
+ SELECT
+
+ chave AS chave_V4022,
+
+ valor AS descricao_V4022
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4022'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4024 AS (
+
+ SELECT
+
+ chave AS chave_V4024,
+
+ valor AS descricao_V4024
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4024'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4025 AS (
+
+ SELECT
+
+ chave AS chave_V4025,
+
+ valor AS descricao_V4025
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4025'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4026 AS (
+
+ SELECT
+
+ chave AS chave_V4026,
+
+ valor AS descricao_V4026
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4026'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4027 AS (
+
+ SELECT
+
+ chave AS chave_V4027,
+
+ valor AS descricao_V4027
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4027'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4028 AS (
+
+ SELECT
+
+ chave AS chave_V4028,
+
+ valor AS descricao_V4028
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4028'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4029 AS (
+
+ SELECT
+
+ chave AS chave_V4029,
+
+ valor AS descricao_V4029
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4029'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4032 AS (
+
+ SELECT
+
+ chave AS chave_V4032,
+
+ valor AS descricao_V4032
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4032'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4033 AS (
+
+ SELECT
+
+ chave AS chave_V4033,
+
+ valor AS descricao_V4033
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4033'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40331 AS (
+
+ SELECT
+
+ chave AS chave_V40331,
+
+ valor AS descricao_V40331
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40331'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V403311 AS (
+
+ SELECT
+
+ chave AS chave_V403311,
+
+ valor AS descricao_V403311
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V403311'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40332 AS (
+
+ SELECT
+
+ chave AS chave_V40332,
+
+ valor AS descricao_V40332
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40332'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V403321 AS (
+
+ SELECT
+
+ chave AS chave_V403321,
+
+ valor AS descricao_V403321
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V403321'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40333 AS (
+
+ SELECT
+
+ chave AS chave_V40333,
+
+ valor AS descricao_V40333
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40333'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V403331 AS (
+
+ SELECT
+
+ chave AS chave_V403331,
+
+ valor AS descricao_V403331
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V403331'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4034 AS (
+
+ SELECT
+
+ chave AS chave_V4034,
+
+ valor AS descricao_V4034
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4034'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40341 AS (
+
+ SELECT
+
+ chave AS chave_V40341,
+
+ valor AS descricao_V40341
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40341'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V403411 AS (
+
+ SELECT
+
+ chave AS chave_V403411,
+
+ valor AS descricao_V403411
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V403411'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40342 AS (
+
+ SELECT
+
+ chave AS chave_V40342,
+
+ valor AS descricao_V40342
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40342'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V403421 AS (
+
+ SELECT
+
+ chave AS chave_V403421,
+
+ valor AS descricao_V403421
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V403421'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4040 AS (
+
+ SELECT
+
+ chave AS chave_V4040,
+
+ valor AS descricao_V4040
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4040'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4043 AS (
+
+ SELECT
+
+ chave AS chave_V4043,
+
+ valor AS descricao_V4043
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4043'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40431 AS (
+
+ SELECT
+
+ chave AS chave_V40431,
+
+ valor AS descricao_V40431
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40431'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4045 AS (
+
+ SELECT
+
+ chave AS chave_V4045,
+
+ valor AS descricao_V4045
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4045'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4046 AS (
+
+ SELECT
+
+ chave AS chave_V4046,
+
+ valor AS descricao_V4046
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4046'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4047 AS (
+
+ SELECT
+
+ chave AS chave_V4047,
+
+ valor AS descricao_V4047
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4047'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4048 AS (
+
+ SELECT
+
+ chave AS chave_V4048,
+
+ valor AS descricao_V4048
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4048'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4049 AS (
+
+ SELECT
+
+ chave AS chave_V4049,
+
+ valor AS descricao_V4049
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4049'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4050 AS (
+
+ SELECT
+
+ chave AS chave_V4050,
+
+ valor AS descricao_V4050
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4050'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40501 AS (
+
+ SELECT
+
+ chave AS chave_V40501,
+
+ valor AS descricao_V40501
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40501'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405011 AS (
+
+ SELECT
+
+ chave AS chave_V405011,
+
+ valor AS descricao_V405011
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405011'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40502 AS (
+
+ SELECT
+
+ chave AS chave_V40502,
+
+ valor AS descricao_V40502
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40502'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405021 AS (
+
+ SELECT
+
+ chave AS chave_V405021,
+
+ valor AS descricao_V405021
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405021'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40503 AS (
+
+ SELECT
+
+ chave AS chave_V40503,
+
+ valor AS descricao_V40503
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40503'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405031 AS (
+
+ SELECT
+
+ chave AS chave_V405031,
+
+ valor AS descricao_V405031
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405031'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4051 AS (
+
+ SELECT
+
+ chave AS chave_V4051,
+
+ valor AS descricao_V4051
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4051'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40511 AS (
+
+ SELECT
+
+ chave AS chave_V40511,
+
+ valor AS descricao_V40511
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40511'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405111 AS (
+
+ SELECT
+
+ chave AS chave_V405111,
+
+ valor AS descricao_V405111
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405111'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40512 AS (
+
+ SELECT
+
+ chave AS chave_V40512,
+
+ valor AS descricao_V40512
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40512'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405121 AS (
+
+ SELECT
+
+ chave AS chave_V405121,
+
+ valor AS descricao_V405121
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405121'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4057 AS (
+
+ SELECT
+
+ chave AS chave_V4057,
+
+ valor AS descricao_V4057
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4057'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4058 AS (
+
+ SELECT
+
+ chave AS chave_V4058,
+
+ valor AS descricao_V4058
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4058'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40581 AS (
+
+ SELECT
+
+ chave AS chave_V40581,
+
+ valor AS descricao_V40581
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40581'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405811 AS (
+
+ SELECT
+
+ chave AS chave_V405811,
+
+ valor AS descricao_V405811
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405811'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40582 AS (
+
+ SELECT
+
+ chave AS chave_V40582,
+
+ valor AS descricao_V40582
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40582'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40583 AS (
+
+ SELECT
+
+ chave AS chave_V40583,
+
+ valor AS descricao_V40583
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40583'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405831 AS (
+
+ SELECT
+
+ chave AS chave_V405831,
+
+ valor AS descricao_V405831
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405831'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40584 AS (
+
+ SELECT
+
+ chave AS chave_V40584,
+
+ valor AS descricao_V40584
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40584'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4059 AS (
+
+ SELECT
+
+ chave AS chave_V4059,
+
+ valor AS descricao_V4059
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4059'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40591 AS (
+
+ SELECT
+
+ chave AS chave_V40591,
+
+ valor AS descricao_V40591
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40591'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405911 AS (
+
+ SELECT
+
+ chave AS chave_V405911,
+
+ valor AS descricao_V405911
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405911'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V40592 AS (
+
+ SELECT
+
+ chave AS chave_V40592,
+
+ valor AS descricao_V40592
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V40592'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V405921 AS (
+
+ SELECT
+
+ chave AS chave_V405921,
+
+ valor AS descricao_V405921
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V405921'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4063 AS (
+
+ SELECT
+
+ chave AS chave_V4063,
+
+ valor AS descricao_V4063
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4063'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4063A AS (
+
+ SELECT
+
+ chave AS chave_V4063A,
+
+ valor AS descricao_V4063A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4063A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4064 AS (
+
+ SELECT
+
+ chave AS chave_V4064,
+
+ valor AS descricao_V4064
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4064'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4064A AS (
+
+ SELECT
+
+ chave AS chave_V4064A,
+
+ valor AS descricao_V4064A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4064A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4071 AS (
+
+ SELECT
+
+ chave AS chave_V4071,
+
+ valor AS descricao_V4071
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4071'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4072 AS (
+
+ SELECT
+
+ chave AS chave_V4072,
+
+ valor AS descricao_V4072
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4072'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4072A AS (
+
+ SELECT
+
+ chave AS chave_V4072A,
+
+ valor AS descricao_V4072A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4072A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4073 AS (
+
+ SELECT
+
+ chave AS chave_V4073,
+
+ valor AS descricao_V4073
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4073'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4074 AS (
+
+ SELECT
+
+ chave AS chave_V4074,
+
+ valor AS descricao_V4074
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4074'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4074A AS (
+
+ SELECT
+
+ chave AS chave_V4074A,
+
+ valor AS descricao_V4074A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4074A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4075A AS (
+
+ SELECT
+
+ chave AS chave_V4075A,
+
+ valor AS descricao_V4075A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4075A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4076 AS (
+
+ SELECT
+
+ chave AS chave_V4076,
+
+ valor AS descricao_V4076
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4076'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4077 AS (
+
+ SELECT
+
+ chave AS chave_V4077,
+
+ valor AS descricao_V4077
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4077'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4078 AS (
+
+ SELECT
+
+ chave AS chave_V4078,
+
+ valor AS descricao_V4078
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4078'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4078A AS (
+
+ SELECT
+
+ chave AS chave_V4078A,
+
+ valor AS descricao_V4078A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4078A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_V4082 AS (
+
+ SELECT
+
+ chave AS chave_V4082,
+
+ valor AS descricao_V4082
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'V4082'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD2002 AS (
+
+ SELECT
+
+ chave AS chave_VD2002,
+
+ valor AS descricao_VD2002
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD2002'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD2004 AS (
+
+ SELECT
+
+ chave AS chave_VD2004,
+
+ valor AS descricao_VD2004
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD2004'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD3004 AS (
+
+ SELECT
+
+ chave AS chave_VD3004,
+
+ valor AS descricao_VD3004
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD3004'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD3006 AS (
+
+ SELECT
+
+ chave AS chave_VD3006,
+
+ valor AS descricao_VD3006
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD3006'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4001 AS (
+
+ SELECT
+
+ chave AS chave_VD4001,
+
+ valor AS descricao_VD4001
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4001'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4002 AS (
+
+ SELECT
+
+ chave AS chave_VD4002,
+
+ valor AS descricao_VD4002
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4002'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4003 AS (
+
+ SELECT
+
+ chave AS chave_VD4003,
+
+ valor AS descricao_VD4003
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4003'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4004 AS (
+
+ SELECT
+
+ chave AS chave_VD4004,
+
+ valor AS descricao_VD4004
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4004'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4004A AS (
+
+ SELECT
+
+ chave AS chave_VD4004A,
+
+ valor AS descricao_VD4004A
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4004A'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4005 AS (
+
+ SELECT
+
+ chave AS chave_VD4005,
+
+ valor AS descricao_VD4005
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4005'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4007 AS (
+
+ SELECT
+
+ chave AS chave_VD4007,
+
+ valor AS descricao_VD4007
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4007'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4008 AS (
+
+ SELECT
+
+ chave AS chave_VD4008,
+
+ valor AS descricao_VD4008
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4008'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4009 AS (
+
+ SELECT
+
+ chave AS chave_VD4009,
+
+ valor AS descricao_VD4009
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4009'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4010 AS (
+
+ SELECT
+
+ chave AS chave_VD4010,
+
+ valor AS descricao_VD4010
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4010'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4011 AS (
+
+ SELECT
+
+ chave AS chave_VD4011,
+
+ valor AS descricao_VD4011
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4011'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4012 AS (
+
+ SELECT
+
+ chave AS chave_VD4012,
+
+ valor AS descricao_VD4012
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4012'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4013 AS (
+
+ SELECT
+
+ chave AS chave_VD4013,
+
+ valor AS descricao_VD4013
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4013'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4014 AS (
+
+ SELECT
+
+ chave AS chave_VD4014,
+
+ valor AS descricao_VD4014
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4014'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4015 AS (
+
+ SELECT
+
+ chave AS chave_VD4015,
+
+ valor AS descricao_VD4015
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4015'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4018 AS (
+
+ SELECT
+
+ chave AS chave_VD4018,
+
+ valor AS descricao_VD4018
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4018'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4023 AS (
+
+ SELECT
+
+ chave AS chave_VD4023,
+
+ valor AS descricao_VD4023
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4023'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4030 AS (
+
+ SELECT
+
+ chave AS chave_VD4030,
+
+ valor AS descricao_VD4030
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4030'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4036 AS (
+
+ SELECT
+
+ chave AS chave_VD4036,
+
+ valor AS descricao_VD4036
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4036'
+
+ AND id_tabela = 'microdados'
+
+),
+
+dicionario_VD4037 AS (
+
+ SELECT
+
+ chave AS chave_VD4037,
+
+ valor AS descricao_VD4037
+
+ FROM `basedosdados.br_ibge_pnadc.dicionario`
+
+ WHERE
+
+ TRUE
+
+ AND nome_coluna = 'VD4037'
+
+ AND id_tabela = 'microdados'
+
+)
+
